@@ -3,7 +3,7 @@ import InputComponent from '../InputComponent/InputComponent';
 import ButtonComponent from '../ButtonComponent/ButtonComponent';
 import 'bootstrap-icons/font/bootstrap-icons.css';
 
-const ButtonInputSearch = ({ placeholder, textButton, size, variantButton }) => {
+const ButtonInputSearch = ({ placeholder, textButton, size, variantButton, textStyle }) => {
   return (
     <div>
         <form className="d-flex" role="search">
@@ -15,6 +15,7 @@ const ButtonInputSearch = ({ placeholder, textButton, size, variantButton }) => 
             <ButtonComponent 
                 text={textButton} 
                 size={size} // Dùng prop size="large" để áp dụng btn-lg
+                textStyle = {textStyle}
                 variant={variantButton || 'outline-success'} // Ví dụ: màu mặc định
                 icon="search" // Thêm prop icon để dùng bi bi-search
             />

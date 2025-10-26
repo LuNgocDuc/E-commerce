@@ -3,11 +3,11 @@ import { IconStar, StyleNameProduct, StyleTag, WrapperCardStyle, WrapperDiscount
 import imageProduct from '../../assets/images/ure.png';
 const CardComponent = () => {
   return (
-        <WrapperCardStyle className="card" style={{ width: "18rem" }}>
+        <WrapperCardStyle className="card" style={{ width: "20rem" }}>
             <WrapperImgCardStyle src={imageProduct} className="card-img-top" alt="..." />
             <div className="card-body">
-                <StyleTag class="home-product-item__favourite">
-                    <i class="bi bi-check2"></i>
+                <StyleTag className="home-product-item__favourite">
+                    <i className="bi bi-check2"></i>
                     <span>Bán Chạy</span>
                 </StyleTag>
                 <StyleNameProduct className="card-title">Phân Bón Ure</StyleNameProduct>

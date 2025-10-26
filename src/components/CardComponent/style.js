@@ -5,7 +5,15 @@ export const WrapperCardStyle = styled.div`
     border-radius: 4px;
     overflow: hidden;
     position: relative;
+
+    &:hover {
+        cursor: pointer;
+        transform: translateY(-1px);
+        box-shadow: 0 1px 20px rgba(0, 0, 0, 0.05);
+}
+    }
 `
+
 export const StyleTag = styled.div`
     position: absolute;
     top: 10px;
@@ -41,7 +49,7 @@ export const StyleTag = styled.div`
 `
 
 export const WrapperImgCardStyle = styled.img`
-    width: 100%;
+    width: 205px;
     height: 160px;
 `
 
@@ -76,4 +84,9 @@ export const WrapperDiscountText = styled.span`
     font-size: 11px;
     font-weight: 500;
     margin-left: 5px;
+`
+export const WrapperStyleTextSell  = styled.span`
+    color: rgb(120, 120, 120);
+    font-size: 15px;
+    line-height: 24px;
 `
